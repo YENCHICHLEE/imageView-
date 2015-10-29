@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		69FD4E461BE0C24F00DEF606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FD4E451BE0C24F00DEF606 /* main.m */; };
 		69FD4E491BE0C24F00DEF606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FD4E481BE0C24F00DEF606 /* AppDelegate.m */; };
-		69FD4E4C1BE0C24F00DEF606 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FD4E4B1BE0C24F00DEF606 /* ViewController.m */; };
 		69FD4E4F1BE0C24F00DEF606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FD4E4D1BE0C24F00DEF606 /* Main.storyboard */; };
 		69FD4E511BE0C24F00DEF606 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FD4E501BE0C24F00DEF606 /* Images.xcassets */; };
 		69FD4E541BE0C24F00DEF606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FD4E521BE0C24F00DEF606 /* LaunchScreen.xib */; };
 		69FD4E601BE0C24F00DEF606 /* imageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FD4E5F1BE0C24F00DEF606 /* imageViewTests.m */; };
+		69FD4E6B1BE0C6FC00DEF606 /* loginPic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69FD4E6A1BE0C6FC00DEF606 /* loginPic.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,13 @@
 		69FD4E451BE0C24F00DEF606 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69FD4E471BE0C24F00DEF606 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69FD4E481BE0C24F00DEF606 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		69FD4E4A1BE0C24F00DEF606 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		69FD4E4B1BE0C24F00DEF606 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		69FD4E4E1BE0C24F00DEF606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69FD4E501BE0C24F00DEF606 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		69FD4E531BE0C24F00DEF606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		69FD4E591BE0C24F00DEF606 /* imageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FD4E5E1BE0C24F00DEF606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69FD4E5F1BE0C24F00DEF606 /* imageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imageViewTests.m; sourceTree = "<group>"; };
+		69FD4E6A1BE0C6FC00DEF606 /* loginPic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginPic.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +80,10 @@
 		69FD4E421BE0C24F00DEF606 /* imageView */ = {
 			isa = PBXGroup;
 			children = (
+				69FD4E6A1BE0C6FC00DEF606 /* loginPic.jpeg */,
+				69FD4E691BE0C57C00DEF606 /* image */,
 				69FD4E471BE0C24F00DEF606 /* AppDelegate.h */,
 				69FD4E481BE0C24F00DEF606 /* AppDelegate.m */,
-				69FD4E4A1BE0C24F00DEF606 /* ViewController.h */,
-				69FD4E4B1BE0C24F00DEF606 /* ViewController.m */,
 				69FD4E4D1BE0C24F00DEF606 /* Main.storyboard */,
 				69FD4E501BE0C24F00DEF606 /* Images.xcassets */,
 				69FD4E521BE0C24F00DEF606 /* LaunchScreen.xib */,
@@ -117,6 +116,13 @@
 				69FD4E5E1BE0C24F00DEF606 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69FD4E691BE0C57C00DEF606 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +207,7 @@
 			files = (
 				69FD4E4F1BE0C24F00DEF606 /* Main.storyboard in Resources */,
 				69FD4E541BE0C24F00DEF606 /* LaunchScreen.xib in Resources */,
+				69FD4E6B1BE0C6FC00DEF606 /* loginPic.jpeg in Resources */,
 				69FD4E511BE0C24F00DEF606 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +226,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69FD4E4C1BE0C24F00DEF606 /* ViewController.m in Sources */,
 				69FD4E491BE0C24F00DEF606 /* AppDelegate.m in Sources */,
 				69FD4E461BE0C24F00DEF606 /* main.m in Sources */,
 			);
@@ -412,6 +418,7 @@
 				69FD4E651BE0C24F00DEF606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69FD4E661BE0C24F00DEF606 /* Build configuration list for PBXNativeTarget "imageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				69FD4E681BE0C24F00DEF606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
