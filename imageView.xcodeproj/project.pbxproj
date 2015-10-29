@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69CE09141BE2602200228297 /* ImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE09131BE2602200228297 /* ImageTableViewController.m */; };
 		69FD4E461BE0C24F00DEF606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FD4E451BE0C24F00DEF606 /* main.m */; };
 		69FD4E491BE0C24F00DEF606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FD4E481BE0C24F00DEF606 /* AppDelegate.m */; };
 		69FD4E4F1BE0C24F00DEF606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69FD4E4D1BE0C24F00DEF606 /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69CE09121BE2602200228297 /* ImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewController.h; sourceTree = "<group>"; };
+		69CE09131BE2602200228297 /* ImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewController.m; sourceTree = "<group>"; };
 		69FD4E401BE0C24F00DEF606 /* imageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FD4E441BE0C24F00DEF606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69FD4E451BE0C24F00DEF606 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		69FD4E371BE0C24F00DEF606 = {
 			isa = PBXGroup;
 			children = (
+				69FD4E691BE0C57C00DEF606 /* image */,
 				69FD4E421BE0C24F00DEF606 /* imageView */,
 				69FD4E5C1BE0C24F00DEF606 /* imageViewTests */,
 				69FD4E411BE0C24F00DEF606 /* Products */,
@@ -81,13 +85,14 @@
 			isa = PBXGroup;
 			children = (
 				69FD4E6A1BE0C6FC00DEF606 /* loginPic.jpeg */,
-				69FD4E691BE0C57C00DEF606 /* image */,
 				69FD4E471BE0C24F00DEF606 /* AppDelegate.h */,
 				69FD4E481BE0C24F00DEF606 /* AppDelegate.m */,
 				69FD4E4D1BE0C24F00DEF606 /* Main.storyboard */,
 				69FD4E501BE0C24F00DEF606 /* Images.xcassets */,
 				69FD4E521BE0C24F00DEF606 /* LaunchScreen.xib */,
 				69FD4E431BE0C24F00DEF606 /* Supporting Files */,
+				69CE09121BE2602200228297 /* ImageTableViewController.h */,
+				69CE09131BE2602200228297 /* ImageTableViewController.m */,
 			);
 			path = imageView;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			children = (
 			);
 			name = image;
+			path = imageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69CE09141BE2602200228297 /* ImageTableViewController.m in Sources */,
 				69FD4E491BE0C24F00DEF606 /* AppDelegate.m in Sources */,
 				69FD4E461BE0C24F00DEF606 /* main.m in Sources */,
 			);
