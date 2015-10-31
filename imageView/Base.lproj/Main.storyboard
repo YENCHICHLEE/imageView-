@@ -62,30 +62,46 @@
         <!--Image List-->
         <scene sceneID="jrB-3L-UXi">
             <objects>
-                <tableViewController id="Cdp-0d-n6R" customClass="ImageTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="404" sectionHeaderHeight="22" sectionFooterHeight="22" id="i0b-dZ-9hZ">
+                <tableViewController id="Cdp-0d-n6R" customClass="imageListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="22" sectionFooterHeight="22" id="i0b-dZ-9hZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="404" id="MUC-Wz-Wyp" customClass="TableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="600" height="404"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="115" id="MUC-Wz-Wyp" customClass="TableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="600" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MUC-Wz-Wyp" id="jLk-Ht-UC6">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="403.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="114.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qx5-S9-KdP">
-                                            <rect key="frame" x="78" y="44" width="464" height="280"/>
+                                            <rect key="frame" x="2" y="8" width="216" height="112"/>
                                             <animations/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyJ-tH-M7x">
+                                            <rect key="frame" x="226" y="65" width="314" height="49.5"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-QE-26T">
+                                            <rect key="frame" x="226" y="0.0" width="296" height="57"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="BigImageView" destination="qx5-S9-KdP" id="Cc4-Ka-08V"/>
+                                    <outlet property="BigImageView" destination="qx5-S9-KdP" id="BSH-9C-YeD"/>
+                                    <outlet property="descLablel" destination="JHH-QE-26T" id="waZ-Lo-rn4"/>
+                                    <outlet property="titleLabel" destination="FyJ-tH-M7x" id="Z3r-8h-bhw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

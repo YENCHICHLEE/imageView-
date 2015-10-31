@@ -26,6 +26,7 @@
 		6941FD191BE34ED90090B221 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6941FD0F1BE34ED90090B221 /* UIProgressView+AFNetworking.m */; };
 		6941FD1A1BE34ED90090B221 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6941FD111BE34ED90090B221 /* UIRefreshControl+AFNetworking.m */; };
 		6941FD1B1BE34ED90090B221 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6941FD131BE34ED90090B221 /* UIWebView+AFNetworking.m */; };
+		698EDAD11BE4C1FB00EA6C0B /* imageListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 698EDAD01BE4C1FB00EA6C0B /* imageListTableViewController.m */; };
 		69CE09141BE2602200228297 /* ImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE09131BE2602200228297 /* ImageTableViewController.m */; };
 		69CE091A1BE264C500228297 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CE09191BE264C500228297 /* TableViewCell.m */; };
 		69CE091C1BE26FFC00228297 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CE091B1BE26FFC00228297 /* loading.png */; };
@@ -88,6 +89,8 @@
 		6941FD111BE34ED90090B221 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		6941FD121BE34ED90090B221 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		6941FD131BE34ED90090B221 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		698EDACF1BE4C1FB00EA6C0B /* imageListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageListTableViewController.h; sourceTree = "<group>"; };
+		698EDAD01BE4C1FB00EA6C0B /* imageListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageListTableViewController.m; sourceTree = "<group>"; };
 		69CE09121BE2602200228297 /* ImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewController.h; sourceTree = "<group>"; };
 		69CE09131BE2602200228297 /* ImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewController.m; sourceTree = "<group>"; };
 		69CE09181BE264C500228297 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				6941FCE21BE30CDB0090B221 /* UIKit+AFNetworking */,
 				69CE09181BE264C500228297 /* TableViewCell.h */,
 				69CE09191BE264C500228297 /* TableViewCell.m */,
+				698EDACF1BE4C1FB00EA6C0B /* imageListTableViewController.h */,
+				698EDAD01BE4C1FB00EA6C0B /* imageListTableViewController.m */,
 				69CE09121BE2602200228297 /* ImageTableViewController.h */,
 				69CE09131BE2602200228297 /* ImageTableViewController.m */,
 				69FD4E4D1BE0C24F00DEF606 /* Main.storyboard */,
@@ -280,7 +285,7 @@
 		69FD4E381BE0C24F00DEF606 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Huijun.org;
 				TargetAttributes = {
 					69FD4E3F1BE0C24F00DEF606 = {
@@ -343,6 +348,7 @@
 				6941FD191BE34ED90090B221 /* UIProgressView+AFNetworking.m in Sources */,
 				6941FD171BE34ED90090B221 /* UIButton+AFNetworking.m in Sources */,
 				6941FD1A1BE34ED90090B221 /* UIRefreshControl+AFNetworking.m in Sources */,
+				698EDAD11BE4C1FB00EA6C0B /* imageListTableViewController.m in Sources */,
 				6941FD161BE34ED90090B221 /* UIAlertView+AFNetworking.m in Sources */,
 				69CE09141BE2602200228297 /* ImageTableViewController.m in Sources */,
 				6941FCFD1BE34BBE0090B221 /* AFSecurityPolicy.m in Sources */,
@@ -422,6 +428,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -484,6 +491,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = imageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay.com.c.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -494,6 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = imageView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay.com.c.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -512,6 +521,7 @@
 				);
 				INFOPLIST_FILE = imageViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay.com.c.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imageView.app/imageView";
 			};
@@ -527,6 +537,7 @@
 				);
 				INFOPLIST_FILE = imageViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jay.com.c.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imageView.app/imageView";
 			};
