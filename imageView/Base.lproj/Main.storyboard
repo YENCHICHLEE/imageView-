@@ -5,60 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Image-->
-        <scene sceneID="7af-x5-deW">
-            <objects>
-                <tableViewController id="fZz-jC-lIj" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ab3-dc-01O">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection headerTitle="View" id="6Xa-0a-mbK">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LoginCell" textLabel="Zg4-Qi-Rpp" imageView="GEv-Mv-ahC" style="IBUITableViewCellStyleDefault" id="swz-yD-yrk">
-                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="swz-yD-yrk" id="J2d-nf-yOi">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zg4-Qi-Rpp">
-                                                    <rect key="frame" x="74" y="0.0" width="491" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="loginPic.jpeg" id="GEv-Mv-ahC">
-                                                    <rect key="frame" x="15" y="0.0" width="44" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <animations/>
-                                                </imageView>
-                                            </subviews>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                        <connections>
-                                            <segue destination="Cdp-0d-n6R" kind="push" identifier="LoginPush" id="ATz-kh-NrN"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="fZz-jC-lIj" id="fVo-tu-AI1"/>
-                            <outlet property="delegate" destination="fZz-jC-lIj" id="E2k-Rr-Fp6"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="View Image" id="FEo-uo-6Kc"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QgY-MP-dQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1970" y="389"/>
-        </scene>
         <!--Image List-->
         <scene sceneID="jrB-3L-UXi">
             <objects>
@@ -70,7 +16,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="115" id="MUC-Wz-Wyp" customClass="TableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="600" height="115"/>
+                                <rect key="frame" x="0.0" y="22" width="600" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MUC-Wz-Wyp" id="jLk-Ht-UC6">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="114.5"/>
@@ -80,15 +26,15 @@
                                             <rect key="frame" x="2" y="8" width="216" height="112"/>
                                             <animations/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyJ-tH-M7x">
-                                            <rect key="frame" x="226" y="65" width="314" height="49.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-QE-26T">
+                                            <rect key="frame" x="226" y="0.0" width="69" height="28"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-QE-26T">
-                                            <rect key="frame" x="226" y="0.0" width="296" height="57"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyJ-tH-M7x">
+                                            <rect key="frame" x="220" y="24" width="171" height="90.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,7 +62,30 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PS4-eZ-aqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1147" y="389"/>
+            <point key="canvasLocation" x="-1022" y="90"/>
+        </scene>
+        <!--ViewController.m-->
+        <scene sceneID="TfX-zl-Qy2">
+            <objects>
+                <viewController title="ViewController.m" id="x01-D5-bc1" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7v1-rF-xUh"/>
+                        <viewControllerLayoutGuide type="bottom" id="HQI-ml-mbO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="enL-AA-g1l">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bjw-VL-ZcQ"/>
+                    <connections>
+                        <segue destination="Cdp-0d-n6R" kind="modal" identifier="go_Login" id="sO7-4n-3fY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65d-2j-Ah9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1726" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RbF-TI-FJb">
@@ -128,15 +97,12 @@
                         <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="fZz-jC-lIj" kind="relationship" relationship="rootViewController" id="n8W-ge-fRX"/>
+                        <segue destination="x01-D5-bc1" kind="relationship" relationship="rootViewController" id="6Cz-Eu-hTQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m21-zz-iIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2646" y="393"/>
+            <point key="canvasLocation" x="-2534" y="90"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="loginPic.jpeg" width="225" height="225"/>
-    </resources>
 </document>

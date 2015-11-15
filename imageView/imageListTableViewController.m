@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 
 #import "UIImage+AFNetworking.h"
+
 #import "UIImageView+AFnetworking.h"
 @interface imageListTableViewController ()
 
@@ -29,6 +30,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -43,7 +46,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 30;
+    return 100;
 }
 
 
@@ -51,12 +54,15 @@
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell" forIndexPath:indexPath];
     NSDictionary * imgdata =self.ImageListData[indexPath
                                                .row];
+    
+    
     //取出Data裡的陣列
     NSString *img_id = imgdata[@"id"];
     NSString *img_owner = imgdata[@"owner"];
     NSString *img_server =imgdata[@"server"];
     NSString *img_farm = imgdata[@"farm"];
     NSString *img_secret =imgdata[@"secret"];
+    NSString *img_title =imgdata[@"title"];
     NSLog(@"!!!!!!!!!!!!!!!!!!ID:%@Owner:%@",img_id,img_owner);
     NSString *img_url = [NSString stringWithFormat:@"https://c2.staticflickr.com/%@/%@/%@_%@.jpg",img_farm,img_server,img_id,img_secret];
     NSLog(@"URLLLLLLLLLLLL:%@",img_url);
@@ -64,22 +70,34 @@
     
     
     // Configure the cell...
-    cell.titleLabel.text = [NSString stringWithFormat:@"第 %i 個 Row 的 title",indexPath.row];
-    cell.descLablel.text = [NSString stringWithFormat:@"第 %i 個 Row 的 description",indexPath.row];
+    cell.titleLabel.text = [NSString stringWithFormat:@"%@",img_title];
+    cell.descLablel.text = [NSString stringWithFormat:@"%li",(long)indexPath.row];
     
     
-    
-    //在網路上的圖還沒載入前，先顯示 displogo
+    //非同步下載方式
+    dispatch_async(dispatch_get_global_queue(0,0), ^{
+        NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: img_url]];
+        if ( imageData == nil )
+            return;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // WARNING: is the cell still using the same data by this point??
+            cell.BigImageView.image = [UIImage imageWithData:imageData];
+            
+        
+        });
+    });
 
 
-    
-    //在網路上的圖還沒載入前，先顯示 displogo
+
+    /*
+    //在網路上的圖還沒載入前，先顯示 loading
     UIImage *placeholderImage = [UIImage imageNamed:@"loading.png"];
     //取得陣列 img_list 裡的第一個縮圖網址，轉為 NSURLRequest
     NSString *imgUrlString = img_url;
     NSURL *url = [NSURL URLWithString:imgUrlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    //載入網路上的縮圖，並設定到 cell 的 thumbImageView
+    //載入網路上的縮圖，並設定到 cell 的 ImageView
+    
     __weak TableViewCell *weakCell = cell;
     [cell.BigImageView setImageWithURLRequest:request
                                placeholderImage:placeholderImage
@@ -91,7 +109,7 @@
      ];
     
     
-    
+    */
     
     return cell;
 }
@@ -100,7 +118,7 @@
     // 設定成員變數 JsonData 的初始大小為20，用來存抓下來的列表
     //self.JsonData = [NSMutableArray arrayWithCapacity:2];
     self.ImageListData =[NSMutableArray arrayWithCapacity:35];
-    NSString *urlString = @"https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=d279a8729ecfd521867cea192e8b8971&per_page=20&format=json&nojsoncallback=1";
+    NSString *urlString = @"https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=d279a8729ecfd521867cea192e8b8971&per_page=100&format=json&nojsoncallback=1";
     NSURL* url = [NSURL URLWithString:urlString];
     NSURLRequest* request = [NSURLRequest requestWithURL:url];
     //存到緩沖區
@@ -115,17 +133,10 @@
     self.ImageListData =[DataPhotos objectForKey:@"photo"];
    
   
-   
-    
 
- 
-
-  
 [self.tableView reloadData];
 }
 
-    
-    
 
 /*
 // Override to support conditional editing of the table view.
